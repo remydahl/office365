@@ -1,4 +1,22 @@
-﻿$credential = Get-Credential
+<#
+.SYNOPSIS
+    This script connects to the Skype for Business admin shell, specifying the admin domain to connect to.
+
+.DESCRIPTION
+    The script prompts for credentials, and then connects to the MSOL Service in order to locate the root tenant domain. This domain is then used 
+    to specify the OverrideAdminDomain parameter.
+    
+.NOTES
+    File Name      : Connect-SFB-Online.ps1
+    Author         : Jeremy Dahl (Jeremy.Dahl@masterandcmdr.com)
+    Copyright 2017 - Master & Cmd-R
+
+
+.EXAMPLE
+    Simply run this script by calling .\Connect-SFB-Online in PowerShell
+
+#>
+$credential = Get-Credential
 Connect-MsolService -Credential $credential
 
 # Find the root (onmicrosoft.com) tenant domain
