@@ -7,12 +7,12 @@
     the script prompts for credentials, and then connects to the Exchange Online shell, as well as the MSOL Service.
     
 .NOTES
-    File Name      : Connect-ExchangeOnline.ps1
+    File Name      : Connect-ExchangeOnline-MFA.ps1
     Author         : Jeremy Dahl (Jeremy.Dahl@masterandcmdr.com)
     Copyright 2018 - Master & Cmd-R
 
 .EXAMPLE
-    Simply run this script by calling .\Connect-ExchangeOnline.ps1 in PowerShell.
+    Simply run this script by calling .\Connect-ExchangeOnline-MFA.ps1 in PowerShell.
 #>
 
 Write-Host "Checking for an existing connection to Exchange Online..." -ForegroundColor Yellow
